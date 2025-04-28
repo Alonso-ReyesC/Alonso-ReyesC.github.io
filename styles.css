@@ -5,12 +5,20 @@
     box-sizing: border-box;
 }
 
-/* Fuente personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow:wght@400;500;600;700&display=swap');
+
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Barlow', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4, .logo {
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .container {
@@ -35,10 +43,12 @@ nav {
     align-items: center;
 }
 
+/* Ajustar el logo para la nueva fuente */
 .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #ff4500;
+    letter-spacing: 2px;
 }
 
 .hamburger {
@@ -57,7 +67,7 @@ nav {
 
 /* Estilos del menú hamburguesa */
 .menu-toggle {
-    display: none; /* Ocultar el checkbox */
+    display: none;
 }
 
 .menu-icon {
@@ -127,8 +137,9 @@ nav {
 }
 
 .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
     margin-bottom: 1rem;
+    line-height: 1.1;
 }
 
 .hero-content p {
@@ -213,12 +224,16 @@ nav {
     padding: 4rem 2rem;
 }
 
+/* Ajustar otros elementos con la nueva fuente */
 .section-title {
-    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
     color: #333;
     margin-bottom: 3rem;
     text-align: center;
-    font-weight: 700;
 }
 
 /* Modelos Grid - Renovado */
@@ -241,8 +256,10 @@ nav {
     transform: translateY(-8px);
 }
 
+/* Ajustar otros elementos con la nueva fuente */
 .modelo h3 {
-    font-size: 1.3rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4rem;
     margin-bottom: 0.5rem;
     color: #333;
 }
@@ -370,7 +387,6 @@ nav {
     align-items: center;
 }
 
-/* Ajustar el avatar con borde naranja como en la imagen */
 .avatar {
     width: 90px;
     height: 90px;
@@ -396,11 +412,13 @@ nav {
     line-height: 1.5;
 }
 
+/* Ajustar otros elementos con la nueva fuente */
 .testimonio-autor {
-    font-weight: 700;
-    color: #333;
+    font-family: 'Oswald', sans-serif;
     font-size: 1.2rem;
+    font-weight: 600;
     margin-top: auto;
+    color: #333;
 }
 
 /* Footer */
@@ -422,9 +440,11 @@ footer {
     min-width: 200px;
 }
 
+/* Ajustar otros elementos con la nueva fuente */
 .footer-brand h3 {
-    font-size: 1.8rem;
-    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
     margin-bottom: 1.5rem;
 }
 
@@ -466,8 +486,11 @@ footer {
     min-width: 150px;
 }
 
+/* Ajustar otros elementos con la nueva fuente */
 .footer-column h4 {
-    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
     margin-bottom: 1.5rem;
 }
 
@@ -671,7 +694,6 @@ footer {
 
 .social-link:hover .ig-icon-footer {
     transform: scale(1.1);
-    /* Mantenemos el filtro invert(1) para que siga siendo blanco en hover */
 }
 
 /* Formulario de Contacto */
