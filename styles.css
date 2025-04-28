@@ -95,7 +95,7 @@ nav {
 }
 
 .hero {
-    background: url('img/fondo.jpg') center/cover no-repeat;
+    background: url('img/fondo.png') center/cover no-repeat;
     min-height: 80vh;
     padding: 5rem 2rem;
     color: white;
