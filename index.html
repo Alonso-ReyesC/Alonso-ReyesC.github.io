@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MotoXtreme</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
@@ -39,9 +38,15 @@
                 <a href="#contacto" class="btn secondary-btn">Contactar</a>
             </div>
             <div class="social-proof">
-                <a href="#" class="social-icon"><i class="material-icons">public</i> Google</a>
-                <a href="#" class="social-icon"><span class="icon-x">𝕏</span> Twitter</a>
-                <a href="#" class="social-icon"><i class="material-icons">facebook</i> Facebook</a>
+                <a href="#" class="social-icon">
+                    <img src="img/instagram-logo.png" alt="Instagram" class="ig-icon"> Instagram
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="img/x-logo.png" alt="X (Twitter)" class="x-icon"> Twitter
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="img/facebook-logo.png" alt="Facebook" class="fb-icon"> Facebook
+                </a>
             </div>
         </div>
         <div class="hero-image">
@@ -77,7 +82,7 @@
                     <h3>EcoVolt</h3>
                     <p>Innovación eléctrica para una movilidad sostenible y potente al mismo tiempo.</p>
                     <div class="modelo-img">
-                        <img src="img/moto4.jfif" alt="Motocicleta eléctrica">
+                        <img src="img/moto4.jpg" alt="Motocicleta eléctrica">
                     </div>
                 </article>
             </div>
@@ -88,9 +93,15 @@
         <div class="container">
             <div class="innovation-content">
                 <h2 class="section-title">Llevamos las motocicletas al siguiente nivel</h2>
-                <p>En MotoExtrema, invertimos en investigación y tecnología de vanguardia para ofrecerte motocicletas más seguras, rápidas y ecológicas. Nos apasiona reinventar la forma en que se vive la carretera.</p>
-                <div class="innovation-img">
-                    <img src="innovacion.jpg" alt="Innovación en motocicletas">
+                <p>En MotoXtreme, invertimos en investigación y tecnología de vanguardia para ofrecerte motocicletas más seguras, rápidas y ecológicas. Nos apasiona reinventar la forma en que se vive la carretera.</p>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/5A1cd7yR9-s" 
+                        title="eROCKIT - Motocicleta innovadora" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
                 </div>
             </div>
             <div class="stats-container">
@@ -108,21 +119,21 @@
             <div class="testimonios-grid">
                 <div class="testimonio">
                     <div class="avatar">
-                        <div class="avatar-placeholder">JP</div>
+                        <img src="img/usuario2.jpg" alt="David Martínez" class="avatar-img">
                     </div>
                     <p class="testimonio-texto">"La Speedster 500 me cambió la vida, es pura emoción."</p>
-                    <p class="testimonio-autor">David Martínes</p>
+                    <p class="testimonio-autor">David Martínez</p>
                 </div>
                 <div class="testimonio">
                     <div class="avatar">
-                        <div class="avatar-placeholder">AG</div>
+                        <img src="img/usuario1.jpg" alt="Aaron Jimenez" class="avatar-img">
                     </div>
-                    <p class="testimonio-texto">"Nunca había sentido tanta libertad como con mi Urban Rider."</p>
+                    <p class="testimonio-texto">"Nunca había sentido tanta libertad como con mi Urban Rider🚬."</p>
                     <p class="testimonio-autor">Aaron Jimenez</p>
                 </div>
                 <div class="testimonio">
                     <div class="avatar">
-                        <div class="avatar-placeholder">LM</div>
+                        <img src="img/usuario3.jfif" alt="Mauricio Sánchez" class="avatar-img">
                     </div>
                     <p class="testimonio-texto">"La EcoVolt demuestra que lo eléctrico puede ser emocionante."</p>
                     <p class="testimonio-autor">Mauricio Sánchez</p>
@@ -131,19 +142,76 @@
         </div>
     </section>
 
+    <section id="contacto" class="contacto-section">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <p class="contacto-descripcion">¿Tienes alguna pregunta o comentario? Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+            
+            <form class="contacto-form">
+                <div class="form-columns">
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="tu.email@ejemplo.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefono">Teléfono (Opcional)</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Tu número telefónico">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="modelo">Modelo de interés</label>
+                            <select id="modelo" name="modelo">
+                                <option value="">Selecciona un modelo</option>
+                                <option value="speedster">Speedster 500</option>
+                                <option value="urban">Urban Rider</option>
+                                <option value="adventure">Adventure Pro</option>
+                                <option value="ecovolt">EcoVolt</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-column">
+                        <div class="form-group form-group-mensaje">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="10" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-footer">
+                    <div class="form-group form-checkbox">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">Acepto los <a href="#">términos y condiciones</a> de privacidad</label>
+                    </div>
+                    
+                    <button type="submit" class="btn primary-btn">Enviar mensaje</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <h3>MOTOXTREME</h3>
-                    <a href="#" class="email-btn">
-                        <span>Enviar E-mail</span>
-                        <span class="arrow-right"><i class="material-icons">arrow_forward</i></span>
-                    </a>
+                    <h3>MOTOXTREMO</h3>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="material-icons">facebook</i></a>
-                        <a href="#" class="social-link"><i class="material-icons">photo_camera</i></a>
-                        <a href="#" class="social-link"><span class="icon-x">𝕏</span></a>
+                        <a href="#" class="social-link">
+                            <img src="img/facebook-logo.png" alt="Facebook" class="fb-icon-footer">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="img/instagram-logo.png" alt="Instagram" class="ig-icon-footer">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="img/x-logo.png" alt="X (Twitter)" class="x-icon-footer">
+                        </a>
                     </div>
                 </div>
                 <div class="footer-links">
@@ -183,3 +251,4 @@
 
 </body>
 </html>
+``` 
